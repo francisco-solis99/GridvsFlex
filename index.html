@@ -1,256 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch the differences between flex and grid in CSS">
+    <meta name="author" content="Francisco Solis">
+    <title>CSS FLex vs CSS Grid</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Watch the differences between flex and grid in CSS">
-  <meta name="author" content="Francisco Solis">
-  <title>CSS FLex vs CSS Grid</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./index.js" defer></script>
-</head>
-
-
-
-<body>
-  <div class="wrapper">
-    <header>
-      <h1>CSS Flexbox vs CSS Grid</h1>
-      <span>css</span>
-    </header>
-    <main class="container">
-      <!-- Section1 -->
-      <section class="versus__section">
-        <h2>Axis flipping</h2>
-        <div class="versus">
-          <article>
-            <h3>Flex</h3>
-            <button id="btn-flex-flip">Flip it</button>
-            <div class="flex axis-flip">
-              <div class="item">1</div>
-              <div class="item">2</div>
-              <div class="item">3</div>
-              <div class="item">4</div>
-              <div class="item">5</div>
-              <div class="item">6</div>
-              <div class="item">7</div>
-              <div class="item">8</div>
-            </div>
-          </article>
-          <article>
-            <h3>Grid</h3>
-            <button id="btn-grid-flip">Flip it</button>
-            <div class="grid axis-flip">
-              <div class="item">1</div>
-              <div class="item">2</div>
-              <div class="item">3</div>
-              <div class="item">4</div>
-              <div class="item">5</div>
-              <div class="item">6</div>
-              <div class="item">7</div>
-              <div class="item">8</div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-
-      <!-- Section2 -->
-      <section class="versus__section">
-        <h2>Controls on right</h2>
-          <div class="versus">
-            <article>
-            <h3>Flex</h3>
-            <div class="flex controll-right">
-              <div class="track flex">
-                <p>The Future (Ft. The R.O.C.)</p>
-                <button>⭐</button>
-                <button>❤️</button>
-                <button>❌</button>
-              </div>
-              <div class="track flex">
-                <p>Bounce With Me (Ft. Jermaine Dupri & Xscape)</p>
-                <button>⭐</button>
-                <button>❤️</button>
-                <button>❌</button>
-              </div>
-              <div class="track flex">
-                <p>Puppy Love (Ft. Jagged Edge & Jermaine Dupri)</p>
-                <button>⭐</button>
-                <button>❤️</button>
-                <button>❌</button>
-              </div>
-            </div>
-          </article>
-            <article>
-            <h3>Grid</h3>
-            <div class="grid controll-right">
-              <div class="track grid">
-                <p>The Future (Ft. The R.O.C.)</p>
-                <button>⭐</button>
-                <button>❤️</button>
-                <button>❌</button>
-              </div>
-              <div class="track grid">
-                <p>Bounce With Me (Ft. Jermaine Dupri & Xscape)</p>
-                <button>⭐</button>
-                <button>❤️</button>
-                <button>❌</button>
-              </div>
-              <div class="track grid">
-                <p>Puppy Love (Ft. Jagged Edge & Jermaine Dupri)</p>
-                <button>⭐</button>
-                <button>❤️</button>
-                <button>❌</button>
-              </div>
-            </div>
-          </article>
-          </div>
-      </section>
-
-      <!-- Section3 -->
-      <section class="versus__section">
-        <h2>Flex on item</h2>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>CSS Flexbox vs CSS Grid</h1>
+        <span>css</span>
+      </header>
+      <main class="container">
+        <!-- Section1 -->
+        <section class="versus__section">
+          <h2>Axis flipping</h2>
           <div class="versus">
             <article>
               <h3>Flex</h3>
-              <div class="flex controls">
-                <button>⏯️</button>
-                <button>🐢</button>
-                <button>🐰</button>
-                <div class="scrubber"></div>
-                <button>💬</button>
-                <button>🔽</button>
-              </div>
-            </article>
-            <article>
-              <h3>Grid</h3>
-              <div class="grid controls">
-                <button>⏯️</button>
-                <button>🐢</button>
-                <button>🐰</button>
-                <div class="scrubber"></div>
-                <button>💬</button>
-                <button>🔽</button>
-              </div>
-            </article>
-          </div>
-      </section>
-
-      <!-- Section4 -->
-      <section class="versus__section">
-          <h2>Self control</h2>
-          <div class="versus">
-            <article>
-              <h3>Flex</h3>
-              <div class="flex corners">
-                <div class="corner item">1</div>
-                <div class="corner item">TWO</div>
-                <div class="corner item">3</div>
-                <div class="corner item">4</div>
-              </div>
-            </article>
-            <article>
-              <h3>Grid</h3>
-              <div class="grid corners">
-                <div class="corner item">1</div>
-                <div class="corner item">TWO</div>
-                <div class="corner item">3</div>
-                <div class="corner item">4</div>
-              </div>
-            </article>
-          </div>
-      </section>
-
-      <!-- Section5 -->
-      <section class="versus__section">
-        <h2>Stacked layout</h2>
-          <div class="versus">
-            <article>
-              <h3>Flex</h3>
-              <div class="flex stacked">
+              <button id="btn-flex-flip">Flip it</button>
+              <div class="flex axis-flip">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
                 <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </article>
-
             <article>
               <h3>Grid</h3>
-              <div class="grid stacked">
+              <button id="btn-grid-flip">Flip it</button>
+              <div class="grid axis-flip">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
                 <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </article>
           </div>
-      </section>
+        </section>
 
-      <!-- Section6 -->
-      <section class="versus__section">
-        <h2>Unknown number of items</h2>
-          <div class="versus">
-            <article>
+
+        <!-- Section2 -->
+        <section class="versus__section">
+          <h2>Controls on right</h2>
+            <div class="versus">
+              <article>
               <h3>Flex</h3>
-              <button id="btn-flex-add">Add</button>
-              <div class="flex unknown">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
+              <div class="flex controll-right">
+                <div class="track flex">
+                  <p>The Future (Ft. The R.O.C.)</p>
+                  <button>⭐</button>
+                  <button>❤️</button>
+                  <button>❌</button>
+                </div>
+                <div class="track flex">
+                  <p>Bounce With Me (Ft. Jermaine Dupri & Xscape)</p>
+                  <button>⭐</button>
+                  <button>❤️</button>
+                  <button>❌</button>
+                </div>
+                <div class="track flex">
+                  <p>Puppy Love (Ft. Jagged Edge & Jermaine Dupri)</p>
+                  <button>⭐</button>
+                  <button>❤️</button>
+                  <button>❌</button>
+                </div>
               </div>
             </article>
-
-            <article>
+              <article>
               <h3>Grid</h3>
-              <button id="btn-grid-add">Add</button>
-              <div class="grid unknown">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
+              <div class="grid controll-right">
+                <div class="track grid">
+                  <p>The Future (Ft. The R.O.C.)</p>
+                  <button>⭐</button>
+                  <button>❤️</button>
+                  <button>❌</button>
+                </div>
+                <div class="track grid">
+                  <p>Bounce With Me (Ft. Jermaine Dupri & Xscape)</p>
+                  <button>⭐</button>
+                  <button>❤️</button>
+                  <button>❌</button>
+                </div>
+                <div class="track grid">
+                  <p>Puppy Love (Ft. Jagged Edge & Jermaine Dupri)</p>
+                  <button>⭐</button>
+                  <button>❤️</button>
+                  <button>❌</button>
+                </div>
               </div>
             </article>
-          </div>
-      </section>
+            </div>
+        </section>
+
+        <!-- Section3 -->
+        <section class="versus__section">
+          <h2>Flex on item</h2>
+            <div class="versus">
+              <article>
+                <h3>Flex</h3>
+                <div class="flex controls">
+                  <button>⏯️</button>
+                  <button>🐢</button>
+                  <button>🐰</button>
+                  <div class="scrubber"></div>
+                  <button>💬</button>
+                  <button>🔽</button>
+                </div>
+              </article>
+              <article>
+                <h3>Grid</h3>
+                <div class="grid controls">
+                  <button>⏯️</button>
+                  <button>🐢</button>
+                  <button>🐰</button>
+                  <div class="scrubber"></div>
+                  <button>💬</button>
+                  <button>🔽</button>
+                </div>
+              </article>
+            </div>
+        </section>
+
+        <!-- Section4 -->
+        <section class="versus__section">
+            <h2>Self control</h2>
+            <div class="versus">
+              <article>
+                <h3>Flex</h3>
+                <div class="flex corners">
+                  <div class="corner item">1</div>
+                  <div class="corner item">TWO</div>
+                  <div class="corner item">3</div>
+                  <div class="corner item">4</div>
+                </div>
+              </article>
+              <article>
+                <h3>Grid</h3>
+                <div class="grid corners">
+                  <div class="corner item">1</div>
+                  <div class="corner item">TWO</div>
+                  <div class="corner item">3</div>
+                  <div class="corner item">4</div>
+                </div>
+              </article>
+            </div>
+        </section>
+
+        <!-- Section5 -->
+        <section class="versus__section">
+          <h2>Stacked layout</h2>
+            <div class="versus">
+              <article>
+                <h3>Flex</h3>
+                <div class="flex stacked">
+                  <div class="item">1</div>
+                  <div class="item">2</div>
+                  <div class="item">3</div>
+                  <div class="item">4</div>
+                  <div class="item">5</div>
+                </div>
+              </article>
+
+              <article>
+                <h3>Grid</h3>
+                <div class="grid stacked">
+                  <div class="item">1</div>
+                  <div class="item">2</div>
+                  <div class="item">3</div>
+                  <div class="item">4</div>
+                  <div class="item">5</div>
+                </div>
+              </article>
+            </div>
+        </section>
+
+        <!-- Section6 -->
+        <section class="versus__section">
+          <h2>Unknown number of items</h2>
+            <div class="versus">
+              <article>
+                <h3>Flex</h3>
+                <button id="btn-flex-add">Add</button>
+                <div class="flex unknown">
+                  <div class="item">1</div>
+                  <div class="item">2</div>
+                  <div class="item">3</div>
+                </div>
+              </article>
+
+              <article>
+                <h3>Grid</h3>
+                <button id="btn-grid-add">Add</button>
+                <div class="grid unknown">
+                  <div class="item">1</div>
+                  <div class="item">2</div>
+                  <div class="item">3</div>
+                </div>
+              </article>
+            </div>
+        </section>
 
 
-      <!-- Section7 -->
-      <section class="versus__section">
-        <h2>Unknown content size</h2>
-          <div class="versus">
-            <article>
-              <h3>Flex</h3>
-              <div class="flex content-size">
-                  <div class="item">Short</div>
-                  <div class="item">Longerrrrrr</div>
-                  <div class="item">
-                    <img src="https://source.unsplash.com/300x200" alt="">
-                  </div>
-                  <div class="item">💩</div>
-              </div>
-            </article>
+        <!-- Section7 -->
+        <section class="versus__section">
+          <h2>Unknown content size</h2>
+            <div class="versus">
+              <article>
+                <h3>Flex</h3>
+                <div class="flex content-size">
+                    <div class="item">Short</div>
+                    <div class="item">Longerrrrrr</div>
+                    <div class="item">
+                      <img src="https://source.unsplash.com/300x200" alt="">
+                    </div>
+                    <div class="item">💩</div>
+                </div>
+              </article>
 
-            <article>
-              <h3>Grid</h3>
-              <div class="grid content-size">
-                  <div class="item">Short</div>
-                  <div class="item">Longerrrrrr</div>
-                  <div class="item">
-                    <img src="https://source.unsplash.com/300x200" alt="">
-                  </div>
-                  <div class="item">💩</div>
-              </div>
-            </article>
-          </div>
-      </section>
-    </main>
-    <footer>
-      Made by <a href="https://github.com/francisco-solis99">Francisco Solis</a> thanks to WesBos and his css grid <a href="https://cssgrid.io/">course</a> 🤍
-    </footer>
-  </div>
-</body>
+              <article>
+                <h3>Grid</h3>
+                <div class="grid content-size">
+                    <div class="item">Short</div>
+                    <div class="item">Longerrrrrr</div>
+                    <div class="item">
+                      <img src="https://source.unsplash.com/300x200" alt="">
+                    </div>
+                    <div class="item">💩</div>
+                </div>
+              </article>
+            </div>
+        </section>
+      </main>
+      <footer>
+        Made by <a href="https://github.com/francisco-solis99">Francisco Solis</a> thanks to WesBos and his css grid <a href="https://cssgrid.io/">course</a> 🤍
+      </footer>
+    </div>
+  </body>
+</html>
